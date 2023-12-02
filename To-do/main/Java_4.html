@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java_4</title>
+        <link rel="stylesheet" href="java_4.css">
+        <script defer src="java_4.js"></script>
+        <script src="https://kit.fontawesome.com/de3123540f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-title">
+                <h1>To-do</h1>
+                <p>A simple way to keep track of your tasks</p>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-container">
+                <div class="main-container-description">
+                    <span>Add new item:</span>
+                    <span id="addItemError">Text is required to add item to the list</span>
+                    <div class="main-container-description-add">
+                        <form id="newItem">
+                            <input type="text" id="addItem">
+                            <button type="submit" id="btnAdd" class="fa-solid fa-plus"></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="main-container-list" id="list">
+
+                </div>            
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+
+        <dialog id="modal" class="modal">   
+            <div id="modalContent" class="modal-content">
+                <span>Complete task before deleting</span>
+            </div>
+        </dialog>   
+
+    </body>
+</html>
